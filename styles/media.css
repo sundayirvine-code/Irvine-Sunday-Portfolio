@@ -1,0 +1,146 @@
+@media screen and (max-width: 1300px) {
+    #container, .socio-name{
+        width:85%;
+    }
+    #image{
+        width: 490px;
+        height: 490px;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    #container, .socio-name{
+        width:95%;
+    }
+
+    #image{
+        width: 450px;
+        height: 450px;
+    }
+
+}
+
+
+@media screen and (max-width: 850px) {
+    #intro h1{
+        font-size: 65px;
+    }
+    .intro-message {
+        margin: 0 40% 0 0;
+    }
+    #image{
+        width: 400px;
+        height: 400px;
+    }
+
+    #container, .socio-name{
+        width:98%;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #intro h1{
+        font-size: 60px;
+    }
+    .intro-message {
+        margin: 0 45% 0 0;
+    }
+    #image{
+        width: 380px;
+        height: 380px;
+    }
+
+    #container, .socio-name{
+        width:99%;
+    }
+
+}
+
+@media screen and (max-width: 699px) {
+    #image{
+        align-self: center;
+        top: calc(100vh / 7);
+    }
+
+    .intro-message{
+        margin: 0;
+        position: relative;
+        top: 30%;
+        text-align: center;
+    }
+    #message {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #contact {
+        bottom: 10px;
+        align-self: center;
+    }
+    
+    #name{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #image{
+        width: 300px;
+        height: 300px;
+    }
+
+    .intro-message{
+        margin: 0;
+        position: relative;
+        top: 23%;
+        text-align: center;
+    }
+    #message {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #contact {
+        bottom: 10px;
+        align-self: center;
+    }
+
+    #name{
+        font-size: 20px;
+    }
+
+    #intro h1{
+        font-size: 50px;
+    }
+
+}
+
+@media screen and (max-width: 399px) {
+    #image{
+        width: 270px;
+        height: 270px;
+        top: calc(100vh / 8);
+    }
+    .intro-message{
+        top: 18%;
+    }
+    #message {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #contact {
+        bottom: 10px;
+        align-self: center;
+    }
+
+    #name{
+        font-size: 20px;
+    }
+
+    #intro h1{
+        font-size: 40px;
+    }
+
+}
