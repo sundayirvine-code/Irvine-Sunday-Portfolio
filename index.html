@@ -15,7 +15,7 @@
 <div id="container">
     <div id="landing-page">
         <div class="socio-name">
-        <div id="name">irvinesunday</div>
+        <div id="name">IrvineSunday</div>
         <div id="socials">
             <a href="https://www.instagram.com/the_a.n.o.m.a.l.y/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/irvine-sunday-84104119b/"><i class="fa-brands fa-linkedin"></i></a>
@@ -97,8 +97,43 @@
         </div>
     </div>
     <div id="contact-page">
-
+        <div class="msg">
+            <h1>CONTACT</h1>
+            <p>I would love to hear about your project and how I could help. Please fill the form and I'll get back to you as soon as possible</p>
+        </div>
+        <div class="form">
+            <form action="#" method="post">
+                <div>
+                    <input type="text" name="Name" id="n" placeholder="FULL NAME">
+                </div>
+                <div>
+                    <input type="email" name="Email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <textarea name="text" id="text" cols="30" rows="1" style="height: 29px;" placeholder="MESSAGE"></textarea>    
+                </div>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+            <script>
+                document.querySelectorAll('textarea').forEach(function(node) {
+                var minHeight = parseInt(getComputedStyle(node).minHeight) || node.clientHeight;
+                node.style.overflowY = 'hidden';
+                node.onchange = node.oninput = function() {
+                    node.style.height = minHeight + 'px';
+                    node.style.height = node.scrollHeight + 'px';
+                };
+                });
+            </script>
+        </div>
     </div>
+    <footer>
+        <div class="name">IrvineSunday</div>
+        <div id="social">
+            <a href="https://www.instagram.com/the_a.n.o.m.a.l.y/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/irvine-sunday-84104119b/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/sundayirvine-code"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 </div>
 
 </body>

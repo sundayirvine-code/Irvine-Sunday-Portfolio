@@ -37,18 +37,20 @@ body{
     width: 75%;
 }
 
-#name{
+#name,
+.name{
     font-size: 35px;
     font-weight: 700;
 }
 
-#socials a{
+#socials a,
+#social a{
     margin-left: 10px;
 }
 
 .fa-brands {
     color: #C62828;
-    font-size: 20px;
+    font-size: 25px;
 }
 #image{
     width: 520px;
@@ -135,7 +137,7 @@ body{
     font-size: 40px;
     font-weight: 900;
     margin:0 auto;
-    margin-top: 45px;
+    margin-top: 50px;
     width: fit-content;
     border-bottom: 1px solid #C62828;
 }
@@ -197,3 +199,91 @@ body{
     background-color: rgba(253, 216, 53, .6);
     text-transform: capitalize;
 }
+
+
+/*CONTACT PAGE STYLING*/
+#contact-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.msg,
+.form{
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.msg h1{
+    font-size: 70px;
+    align-self: flex-start;
+    margin: 5px 0;
+}
+.form form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.form form div, .form form textarea,
+.form form div input{
+    width: 100%;
+    padding: 0;
+    margin: 10px auto;
+    border: none;
+    color: #CCCCCC;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.form form div input,
+.form form textarea{
+    height: 100%;
+    border-bottom: 1px solid #C62828;
+}
+
+.form form div input:focus,
+.form form textarea:focus{
+    outline: none;
+}
+
+.form form textarea{
+    margin-top: 100px;
+    resize: none;
+}
+
+button{
+    border: none;
+    width: fit-content;
+    background-color: transparent;
+    text-align: left;
+    margin: 10px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #C62828;
+    color: #CCCCCC;
+    align-self: flex-end;
+}
+
+button:hover{
+    color: rgba(253, 216, 53, .6);
+    border-bottom: 1px solid #DDDDDD;
+}
+
+footer{
+    border-top: 1px solid #DDDDDD;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

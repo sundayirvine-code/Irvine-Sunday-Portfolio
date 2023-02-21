@@ -20,6 +20,13 @@
 
 }
 
+@media screen and (max-width: 966px) {
+    .msg,
+    .form{
+        height: 350px;
+    }
+
+}
 
 @media screen and (max-width: 850px) {
     #intro h1{
