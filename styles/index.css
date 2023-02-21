@@ -250,6 +250,7 @@ body{
 .form form textarea{
     height: 100%;
     border-bottom: 1px solid #C62828;
+    font-size: 15PX;
 }
 
 .form form div input:focus,

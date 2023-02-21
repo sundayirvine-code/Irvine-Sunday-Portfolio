@@ -10,18 +10,28 @@ form.addEventListener('submit', function (event) {
   const name = nameInput.value;
   const email = emailInput.value;
   const message = messageInput.value;
-
+  const body = ` 
+    <b>Name: </b>${name}
+    <br>
+    <b>From: </b>${email}
+    <br>
+    <b>Message: </b>${message}
+    <br>
+    `
   Email.send({
     Host : "smtp.elasticemail.com",
-    Username : "smtp.elasticemail.com",
-    Password : "7EC05AE28814E7BC9283880E937F6E264DBDB42784EBE2A0956A0BB2716AACA0F7D38DA5C029F50E13DA4D97188D0A51",
+    Username : "amugumbiirvine@gmail.com",
+    Password : "D670848FC98E6016BD909C16E5D03686D74E",
     To : 'amugumbiirvine@gmail.com',
-    From : "amugumbiirvine@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
+    From : 'amugumbiirvine@gmail.com',
+    Subject : 'Client Email: ' + email,
+    Body : body,
 }).then(
   message => alert(message)
 );
-
+// Clear the form fields
+nameInput.value = '';
+emailInput.value = '';
+messageInput.value = '';
 
 });
