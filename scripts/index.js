@@ -8,8 +8,9 @@ form.addEventListener('submit', function (event) {
   event.preventDefault(); // prevent the form from submitting normally
 
   const name = nameInput.value;
-  const email = emailInput.value;
+  const email = emailInput.value.trim();
   const message = messageInput.value;
+
   const body = ` 
     <b>Name: </b>${name}
     <br>
