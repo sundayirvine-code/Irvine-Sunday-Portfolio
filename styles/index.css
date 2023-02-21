@@ -97,6 +97,7 @@ body{
 #contact{
     position: absolute;
     bottom: 10%;
+    border-bottom: 1px solid #C62828;
 }
 
 #contact a{
@@ -104,15 +105,6 @@ body{
     text-decoration: none;
 }
 
-#contact::before{
-    content: "";
-    position: absolute;
-    top: 105%;
-    left: 0;
-    width: 100%;
-    height: 15%;
-    background-color: #C62828;
-}
 
 
 /*SKILL PAGE STYLING*/
@@ -144,15 +136,11 @@ body{
     font-weight: 900;
     margin:0 auto;
     margin-top: 45px;
-    width: 250px;
+    width: fit-content;
+    border-bottom: 1px solid #C62828;
 }
 
-hr{
-    width: 250px;
-    height: 3px;
-    background-color: #C62828;
-    border: none;
-}
+
 
 /*PROJECT PAGE STYLING*/
 #projects-page{
@@ -169,6 +157,7 @@ hr{
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
     
 }
 
@@ -176,26 +165,35 @@ hr{
     width: 100%;
     height: 400px;
     align-items: center;
-
 }
-
-
-/*.img::before{
-    content: "";
-    width: 400px;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    z-index: -10;
-}*/
 
 .project header{
     padding:5px 0;
     font-size: 18px;
     font-weight: 700;
-    text-align: center;
+    text-align: left;
+    margin-left: 8px;
+    border-bottom: 1px solid #DDDDDD;
+    width: fit-content;
 }
 
 .description{
     margin: 8px;
+}
+
+.project p a{
+    text-decoration: none;
+    font-size: inherit;
+    color: inherit;
+    margin-left: 8px;
+}
+
+.live{
+    text-align: center;
+    border: 1px solid rgba(253, 216, 53, .6);
+    width: 50%;
+    margin: 5px auto;
+    border-radius: 35px;
+    background-color: rgba(253, 216, 53, .6);
+    text-transform: capitalize;
 }
