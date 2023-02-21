@@ -1,56 +1,33 @@
-// Replace with your API key and email address
-const SENDGRID_API_KEY = "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";
-const TO_EMAIL_ADDRESS = "amugumbiirvine@gmail.com";
+/* SmtpJS.com - v3.0.0 */
+var Email = { send: function (a) { return new Promise(function (n, e) { a.nocache = Math.floor(1e6 * Math.random() + 1), a.Action = "Send"; var t = JSON.stringify(a); Email.ajaxPost("https://smtpjs.com/v3/smtpjs.aspx?", t, function (e) { n(e) }) }) }, ajaxPost: function (e, n, t) { var a = Email.createCORSRequest("POST", e); a.setRequestHeader("Content-type", "application/x-www-form-urlencoded"), a.onload = function () { var e = a.responseText; null != t && t(e) }, a.send(n) }, ajax: function (e, n) { var t = Email.createCORSRequest("GET", e); t.onload = function () { var e = t.responseText; null != n && n(e) }, t.send() }, createCORSRequest: function (e, n) { var t = new XMLHttpRequest; return "withCredentials" in t ? t.open(e, n, !0) : "undefined" != typeof XDomainRequest ? (t = new XDomainRequest).open(e, n) : t = null, t } };
 
 const form = document.querySelector('form');
 const nameInput = document.querySelector('#n');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#text');
 
-form.addEventListener('submit', function(event) {
+
+form.addEventListener('submit', function (event) {
   event.preventDefault(); // prevent the form from submitting normally
 
   const name = nameInput.value;
   const email = emailInput.value;
   const message = messageInput.value;
 
-// Do something with the name, email, and message variables here, such as sending them using the SendGrid API
-// Define the email message
-const emailData = {
-    personalizations: [
-      {
-        to: [{ email: TO_EMAIL_ADDRESS }],
-      },
-    ],
-    from: { email: email },
-    subject: name,
-    content: [{ type: "text/plain", value: message }],
-  };
-  
-  // Send the email using the SendGrid API
-  fetch("https://api.sendgrid.com/v3/mail/send", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${SENDGRID_API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(emailData),
+  Email.send({
+    SecureToken : "8924576e-c581-4733-baf9-2949a195d560",
+    To : 'amugumbiirvine@gmail.com',
+    From : email,
+    Subject : name,
+    Body : message
+}).then(() => {
+    // Clear the form fields
+    nameInput.value = '';
+    emailInput.value = '';
+    messageInput.value = '';
   })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      console.log("Email sent successfully.");
-    })
-    .catch((error) => {
-      console.error(error);
-    });
+  .catch((error) => {
+    console.error('Failed to send email:', error);
+  });
 
-  // Clear the form fields
-  nameInput.value = '';
-  emailInput.value = '';
-  messageInput.value = '';
 });
-
-
-
