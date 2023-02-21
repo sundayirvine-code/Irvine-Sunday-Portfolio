@@ -29,7 +29,8 @@
 }
 
 @media screen and (max-width: 850px) {
-    #intro h1{
+    #intro h1,
+    .msg h1{
         font-size: 65px;
     }
     .intro-message {
@@ -47,7 +48,8 @@
 }
 
 @media screen and (max-width: 750px) {
-    #intro h1{
+    #intro h1,
+    .msg h1{
         font-size: 60px;
     }
     .intro-message {
@@ -91,7 +93,8 @@
     #name{
         font-size: 28px;
     }
-    #intro h1{
+    #intro h1,
+    .msg h1{
         font-size: 55px;
     }
 }
@@ -151,7 +154,8 @@
         font-size: 20px;
     }
 
-    #intro h1{
+    #intro h1,
+    .msg h1{
         font-size: 40px;
     }
 
@@ -182,7 +186,8 @@
         font-size: 18px;
     }
 
-    #intro h1{
+    #intro h1,
+    .msg h1{
         font-size: 30px;
     }
 
