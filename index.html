@@ -130,7 +130,7 @@
             <script>
                 document.querySelectorAll('textarea').forEach(function(node) {
                 var minHeight = parseInt(getComputedStyle(node).minHeight) || node.clientHeight;
-                node.style.overflowY = 'hidden';
+                node.style.overflowY = 'auto';
                 node.onchange = node.oninput = function() {
                     node.style.height = minHeight + 'px';
                     node.style.height = node.scrollHeight + 'px';
