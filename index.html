@@ -130,7 +130,7 @@
             <script>
                 document.querySelectorAll('textarea').forEach(function(node) {
                 var minHeight = parseInt(getComputedStyle(node).minHeight) || node.clientHeight;
-                node.style.overflowY = 'auto';
+                node.style.overflowY = 'hidden';
                 node.onchange = node.oninput = function() {
                     node.style.height = minHeight + 'px';
                     node.style.height = node.scrollHeight + 'px';
@@ -140,7 +140,11 @@
         </div>
     </div>
     <footer>
-        <div class="name">IrvineSunday</div>
+        <div class="name">
+            IrvineSunday
+            <p>Tel: 0703176902</p>
+            <p>Email: amugumbiirvine@gmail.com</p>
+        </div>
         <div id="social">
             <a href="https://www.instagram.com/the_a.n.o.m.a.l.y/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/irvine-sunday-84104119b/"><i class="fa-brands fa-linkedin"></i></a>
