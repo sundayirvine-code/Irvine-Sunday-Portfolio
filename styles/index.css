@@ -21,7 +21,7 @@ body{
 
 /* Landing page styling */
 #landing-page{
-    height: 99vh;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
