@@ -258,11 +258,6 @@ body{
     outline: none;
 }
 
-.form form textarea{
-    margin-top: 100px;
-    resize: none;
-}
-
 button{
     border: none;
     width: fit-content;
