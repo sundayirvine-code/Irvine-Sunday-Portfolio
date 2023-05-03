@@ -154,8 +154,8 @@ body{
 
 .project{
     width: 450px;
-    height: 450px;
-    margin: 5px;
+    height: 500px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.2);
