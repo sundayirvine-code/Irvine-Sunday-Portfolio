@@ -23,12 +23,6 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![Design preview for the Results summary component coding challenge](./screenshot/desktop-preview.PNG)
-
-![Design preview for the Results summary component coding challenge](./screenshot/mobile-preview.PNG)
-
 
 ### Links
 
@@ -46,7 +40,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Irvine Sunday](https://www.your-site.com)
+- Website - [Irvine Sunday]([https://www.your-site.com](https://irvine-sunday-portfolio.vercel.app/))
 - Frontend Mentor - [sundayirvine-code](https://www.frontendmentor.io/profile/sundayirvine-code)
 
 
